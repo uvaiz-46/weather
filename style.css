@@ -1,0 +1,139 @@
+body {
+    /* background-color: #1B2424; */
+    font-family: 'Montserrat', sans-serif;
+    color: #FFFFFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    /* background: url("https://i.pinimg.com/736x/a3/7d/3e/a37d3e69e222109fd43dfa6883e416dc.jpg") no-repeat center center;
+    backdrop-filter: blur(4px); */
+}
+
+.weather-card {
+    max-width: 370px;
+    width: 100%;
+    height: 90vh;
+    position: relative;
+    border-radius: 20px;
+    padding: 20px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    background: url("https://phoneky.co.uk/thumbs/screensavers/down/places/sunriselan_3arz1iv2.gif") center center / cover no-repeat;
+}
+
+
+
+.koy {
+    position: relative;
+    z-index: 1;
+    backdrop-filter: blur(6px);
+    /* box-shadow: 0px 50px 100px -20px rgba(139, 153, 10, 0.432), 0px 30px 60px -30px rgba(121, 1, 1, 0.3), inset 0px -2px 6px 0px rgba(236, 190, 187, 0.35); */
+
+}
+
+.input-group {
+    margin-bottom: 20px;
+}
+
+.btn-primary {
+    background-color: #FF6347;
+    border-color: #FF6347;
+}
+
+#weather-info {
+    color: #ffffff;
+}
+
+
+#weather-icon {
+    max-width: 100px;
+    margin: 10px auto;
+}
+
+#city-name {
+    font-size: 28px;
+    font-weight: 700;
+    color: rgb(2, 77, 77);
+}
+
+#date {
+    font-size: 16px;
+    color: #000000;
+    font-weight: 400;
+}
+
+#temperature {
+    font-size: 50px;
+    font-weight: 700;
+    color: #fff;
+    margin: 10px 0;
+}
+
+#description {
+    font-size: 21px;
+    margin: 5px 0;
+    font-weight: 600;
+    color: #000000;
+}
+
+#wind-speed,
+#extra-info {
+    font-size: 16px;
+    margin: 5px 0;
+    font-weight: 600;
+    color: #000000;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .weather-card {
+        padding: 15px;
+    }
+
+    #city-name {
+        font-size: 24px;
+    }
+
+    #temperature {
+        font-size: 40px;
+    }
+}
+
+@media (max-width: 576px) {
+    #city-name {
+        font-size: 20px;
+    }
+
+    #temperature {
+        font-size: 35px;
+    }
+
+    #description,
+    #wind-speed,
+    #extra-info {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 350px) {
+    .weather-card {
+        padding: 10px;
+    }
+
+    #city-name {
+        font-size: 18px;
+    }
+
+    #temperature {
+        font-size: 30px;
+    }
+
+    #description,
+    #wind-speed,
+    #extra-info {
+        font-size: 12px;
+    }
+}
